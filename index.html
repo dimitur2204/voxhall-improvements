@@ -36,6 +36,64 @@
 		></script>
 	</head>
 	<body>
+		<div
+			class="dialog-container"
+			id="my-dialog"
+			aria-hidden="true"
+			aria-labelledby="my-dialog-title"
+			aria-describedby="my-dialog-description"
+		>
+			<div class="dialog-overlay" data-a11y-dialog-hide></div>
+			<div class="dialog-content" role="document">
+				<button
+					data-a11y-dialog-hide
+					class="dialog-close"
+					aria-label="Close this dialog window"
+				>
+					&times;
+				</button>
+
+				<div class="row">
+					<div class="col-xs-12 mb-4 p-1">
+						<h4 class="mb-2">We're all ears</h4>
+						<p class="mb-3">
+							Our team is constantly trying to improve the Voxhall experience,
+							that´s why customer feedback is so important to us. Click through
+							to take a quick 3-minute survey, you can tell us how you really
+							feel.
+						</p>
+						<a
+							href="https://forms.gle/zg3PY5esnu4h7XtU6"
+							class="btn btn-primary"
+							>Take survey</a
+						>
+					</div>
+					<div class="col-xs-12 mb-4 p-1">
+						<h4 class="mb-3">Sign up for our newsletter</h4>
+						<form
+							action="https://compell.createsend.com/t/r/s/tklrtrd/"
+							method="post"
+						>
+							<div class="row">
+								<div class="col-xs-12 col-md-7">
+									<input
+										id="fieldEmail"
+										class="mb-3"
+										name="cm-tklrtrd-tklrtrd"
+										type="email w-100"
+										placeholder="Enter your email"
+										required=""
+									/>
+								</div>
+								<div class="col-xs-12 col-md-5">
+									<button type="submit" class="btn btn-ghost">Sign up</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<nav id="menu">
 			<div class="d-x x-end">
 				<button
@@ -283,7 +341,9 @@
 								An amazing video in the background and some very good
 								description that we have here that impresses everyone. Nice!
 							</p>
-							<a href="bar.html" class="mb-2 btn btn-ghost">Check it out</a>
+							<a href="bar.html#find-us" class="mb-2 btn btn-ghost"
+								>Check it out</a
+							>
 						</div>
 					</div>
 				</section>
@@ -293,7 +353,7 @@
 			<div class="row p-5">
 				<div class="col-xs-12 col-md-4 mb-4 p-1">
 					<h3 class="h4 mb-2">We're all ears</h3>
-					<p class="mb-2">
+					<p class="mb-3">
 						Our team is constantly trying to improve the Voxhall experience,
 						that´s why customer feedback is so important to us. Click through to
 						take a quick 3-minute survey, you can tell us how you really feel.
@@ -323,16 +383,37 @@
 				</div>
 				<div class="col-xs-12 col-md-4 mb-4 p-1">
 					<h4 class="mb-3">Sign up for our newsletter</h4>
-					<a href="https://forms.gle/zg3PY5esnu4h7XtU6" class="btn btn-ghost"
-						>Sign up</a
+					<form
+						action="https://compell.createsend.com/t/r/s/tklrtrd/"
+						method="post"
 					>
+						<div class="row" style="margin: 0">
+							<input
+								id="fieldEmail"
+								class="mb-3"
+								name="cm-tklrtrd-tklrtrd"
+								type="email w-100"
+								placeholder="Enter your email"
+								required=""
+							/>
+							<button
+								type="submit"
+								style="margin-left: auto"
+								class="btn btn-ghost"
+							>
+								Sign up
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</footer>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.min.js"></script>
 		<script src="./scripts/nav.js"></script>
 		<script src="./scripts/carousel.js"></script>
 		<script src="./scripts/theme.js"></script>
+		<script src="./scripts/modal.js"></script>
 	</body>
 </html>

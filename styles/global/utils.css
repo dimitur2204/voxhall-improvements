@@ -22,6 +22,20 @@ main section:not(:last-child) {
 .w-40 {
 	width: 40%;
 }
+@media screen and (max-width: 500px) {
+	.w-100 {
+		width: auto !important;
+	}
+	.w-80 {
+		width: auto;
+	}
+	.w-60 {
+		width: auto;
+	}
+	.w-40 {
+		width: auto;
+	}
+}
 .flex-center {
 	display: flex;
 	justify-content: center;
