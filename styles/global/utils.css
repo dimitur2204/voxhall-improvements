@@ -23,9 +23,6 @@ main section:not(:last-child) {
 	width: 40%;
 }
 @media screen and (max-width: 500px) {
-	.w-100 {
-		width: auto !important;
-	}
 	.w-80 {
 		width: auto;
 	}

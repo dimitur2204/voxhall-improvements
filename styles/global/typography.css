@@ -25,6 +25,7 @@ h5 {
 	font-style: italic;
 	font-weight: 800;
 }
+
 h1 {
 	font-size: 4rem;
 	text-transform: uppercase;
@@ -59,4 +60,12 @@ p {
 }
 button {
 	font-size: 0.9rem;
+}
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	.h1 {
+		font-size: 3.5rem;
+	}
 }
