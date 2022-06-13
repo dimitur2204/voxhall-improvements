@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Voxhall</title>
+		<meta
+			name="description"
+			content="A music hall hosting concerts of rock and other artists in the middle of Aarhus for entertainment."
+		/>
+		<link
+			rel="icon"
+			href="./public/icons/logo-white.svg"
+			type="image/svg+xml"
+		/>
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/fdh4uef.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- External styles -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/pages/bar.css" />
+		<script
+			src="https://kit.fontawesome.com/5fcbc46ad6.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<nav id="menu" class="">
+			<div class="d-x x-end">
+				<button
+					id="theme-switch"
+					class="btn btn-dark btn-icon"
+					aria-label="Change color theme"
+				></button>
+				<button
+					id="nav-close"
+					class="btn btn-icon-ghost"
+					aria-label="Close nav"
+				>
+					<i class="fa fa-arrow-right"></i>
+				</button>
+			</div>
+
+			<ul>
+				<li>
+					<a class="pt-4 pb-4" href="bar.html">Bar</a>
+				</li>
+				<li>
+					<a class="pt-4 pb-4" href="photography.html">Photos</a>
+				</li>
+				<li>
+					<a class="pt-4 pb-4" href="index.html">Home</a>
+				</li>
+				<li>
+					<a class="pt-4 pb-4" href="https://fondenvoxhall.dk/koncerter/"
+						>Concerts</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<div id="panel">
+			<nav class="mobile-navbar">
+				<a href="index.html" id="logo">
+					<img src="./public/icons/logo-white.svg" alt="Voxhall" />
+				</a>
+				<button
+					id="nav-toggle"
+					class="btn btn-dark btn-icon"
+					aria-haspopup="menu"
+					aria-label="Open hamburger menu"
+				>
+					<i class="fa fa-bars"></i>
+				</button>
+			</nav>
+			<header>
+				<nav class="desktop-navbar container d-x x-between">
+					<ul>
+						<li class="mr-3">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="mr-3">
+							<a href="https://fondenvoxhall.dk/koncerter/">Concerts</a>
+						</li>
+						<li class="mr-3">
+							<a href="bar.html">Bar</a>
+						</li>
+						<li>
+							<a href="photography.html">Gallery</a>
+						</li>
+					</ul>
+					<a href="index.html">
+						<img
+							class="nav-logo"
+							src="./public/icons/logo-white.svg"
+							alt="Voxhall"
+						/>
+					</a>
+					<a
+						class="btn btn-primary small"
+						href="https://fondenvoxhall.dk/koncerter/"
+						>Book now</a
+					>
+				</nav>
+				<section id="welcome" class="container pb-5">
+					<h1 class="mb-4">
+						<span style="font-weight: 100"> VOXHALL </span>
+						<br />
+						CRAFT BEER BAR
+					</h1>
+					<p class="mb-4">See our selection of high quality craft beers.</p>
+				</section>
+			</header>
+			<main>
+				<section id="beers" class="m-0">
+					<div class="container">
+						<h2 class="h4 text-center text-uppercase">Our craft beers</h2>
+						<div class="swiper beers pb-5">
+							<div class="swiper-wrapper">
+								<img src="./public/bottle-cropped-1.png" class="swiper-slide" />
+								<img src="./public/bottle-cropped-2.png" class="swiper-slide" />
+								<img src="./public/bottle-cropped-3.png" class="swiper-slide" />
+								<img src="./public/bottle-cropped-4.png" class="swiper-slide" />
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section id="drinks-menu" class="m-0">
+					<div class="blur"></div>
+					<div class="container drinks-content">
+						<h2 class="h1 mb-4 pt-4 text-center">Drinks menu</h2>
+						<div class="swiper drinks-menu pb-5">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="menu-card p-2">
+										<h3 class="menu-title">Lager</h3>
+										<div class="d-x x-between p-3 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Das Kolich</p>
+												<p class="menu-type">German-style Ale - 4.5%</p>
+											</div>
+											<div class="menu-price">35KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">45 days India Pale Lager</p>
+												<p class="menu-type">Dry hopped lager - 5.5%</p>
+											</div>
+											<div class="menu-price">55KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">45 Diaz</p>
+												<p class="menu-type">Mexican lager - 4.5%</p>
+											</div>
+											<div class="menu-price">40KR</div>
+										</div>
+										<h3 class="menu-title">BROWN ALE</h3>
+										<div class="d-x x-between p-3 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Brokilde Brown</p>
+												<p class="menu-type">Brown Ale - 6.5%</p>
+											</div>
+											<div class="menu-price">65KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Mochacchino Messiah</p>
+												<p class="menu-type">Coffee Brown Ale - 7.0%</p>
+											</div>
+											<div class="menu-price">65KR</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="menu-card p-2">
+										<h3 class="menu-title">IPA</h3>
+										<div class="d-x x-between p-3 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">First Frontier 2.0</p>
+												<p class="menu-type">West Coast IPA - 7.1%</p>
+											</div>
+											<div class="menu-price">70KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Stereo mono: Idaho Gem</p>
+												<p class="menu-type">New England IPA - 6.8%</p>
+											</div>
+											<div class="menu-price">75KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Dangerously Close To.....</p>
+												<p class="menu-type">Imperial IPA - 9.3%</p>
+											</div>
+											<div class="menu-price">80KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Insane In The Grain</p>
+												<p class="menu-type">Hazy Spelt IPA - 7.2%</p>
+											</div>
+											<div class="menu-price">55KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Black Malts & Body Salts</p>
+												<p class="menu-type">Imperial Black IPA - 9.9%</p>
+											</div>
+											<div class="menu-price">65KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Snublejuice</p>
+												<p class="menu-type">Glutenfree IPA - 4.5%</p>
+											</div>
+											<div class="menu-price">60KR</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="menu-card p-2">
+										<h3 class="menu-title">SOUR</h3>
+										<div class="d-x x-between p-3 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Gose To Hollywood</p>
+												<p class="menu-type">Gose w/Oranges - 3.8%</p>
+											</div>
+											<div class="menu-price">35KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Considered Concentrations</p>
+												<p class="menu-type">Saison w/Elderflower - 3.9%</p>
+											</div>
+											<div class="menu-price">165KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Krystaline Dreams</p>
+												<p class="menu-type">Mixed Fermentation Ale - 6.7%</p>
+											</div>
+											<div class="menu-price">165KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Refractive Indices</p>
+												<p class="menu-type">
+													Mixed Fermentation Ale w/Bergamot/ woodruff/vanilla -
+													6.2%
+												</p>
+											</div>
+											<div class="menu-price">155KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Cantillon Gueuze</p>
+												<p class="menu-type">Lambic - 5.5%</p>
+											</div>
+											<div class="menu-price">150KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Cantillon Kriek</p>
+												<p class="menu-type">Lambic w/cherries - 6.0%</p>
+											</div>
+											<div class="menu-price">150KR</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="menu-card p-2">
+										<h3 class="menu-title">WIT BEER</h3>
+										<div class="d-x x-between p-3 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Cloud 9 Wit 2.0</p>
+												<p class="menu-type">Wit Beer - 4.6%</p>
+											</div>
+											<div class="menu-price">50KR</div>
+										</div>
+										<h3 class="menu-title">SOFT DRINKS</h3>
+										<div class="d-x x-between p-3 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Organic fritz-kola</p>
+												<p class="menu-type">w/Cola nut/natural caffeine</p>
+											</div>
+											<div class="menu-price">35KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">No sugar fritz-kola</p>
+												<p class="menu-type">w/Cola nut/natural caffeine</p>
+											</div>
+											<div class="menu-price">35KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Organic fritz-spritz</p>
+												<p class="menu-type">w/Rhubarb/Elderberry</p>
+											</div>
+											<div class="menu-price">35KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Mana Energy</p>
+												<p class="menu-type">Organic w/Passion fruit</p>
+											</div>
+											<div class="menu-price">35KR</div>
+										</div>
+										<div class="d-x x-between p-3 pt-1 pb-1">
+											<div class="menu-beer-info">
+												<p class="menu-title">Spring water</p>
+											</div>
+											<div class="menu-price">25KR</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section id="taps-line">
+					<div>
+						<!-- <h2 class="my-5 h4 text-center text-uppercase">Tap</h2> -->
+						<div class="d-x x-between prices">
+							<p class="price">35 KR</p>
+							<p class="price">25 KR</p>
+							<p class="price">40 KR</p>
+							<p class="price">20 KR</p>
+							<p class="price">30 KR</p>
+							<p class="price">12 KR</p>
+							<p class="price">50 KR</p>
+							<p class="price">60 KR</p>
+						</div>
+						<img src="./public/bar-tap-beers.jpg" alt="Beer taps line" />
+						<div class="lines-overlay">
+							<div class="d-x x-between line-container">
+								<div class="line-title tall">
+									<div class="line tall"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">City session</p>
+										<p class="type">IPA - 4.5%</p>
+									</div>
+								</div>
+								<div class="line-title short">
+									<div class="line short"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">Whirl Domination</p>
+										<p class="type">IPA - 6.2%</p>
+									</div>
+								</div>
+								<div class="line-title tall">
+									<div class="line tall"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">#DIPA</p>
+										<p class="type">IPA - 8.5%</p>
+									</div>
+								</div>
+								<div class="line-title short">
+									<div class="line short"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">Benene På Nakken</p>
+										<p class="type">Cider - 5.9%</p>
+									</div>
+								</div>
+								<div class="line-title tall">
+									<div class="line tall"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">Gin & Tonic</p>
+										<p class="type">w/Lemon Verbena</p>
+									</div>
+								</div>
+								<div class="line-title short">
+									<div class="line short"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">Frequency Sweep</p>
+										<p class="type">Barrel-aged Wild Ale - 5.6%</p>
+									</div>
+								</div>
+								<div class="line-title tall">
+									<div class="line tall"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">House of Pale</p>
+										<p class="type">Pale Ale - 5.5%</p>
+									</div>
+								</div>
+								<div class="line-title short">
+									<div class="line short"></div>
+									<div class="beer-info mt-2">
+										<p class="beer-name">45 Days</p>
+										<p class="type">Organic Pilsner - 4.7%</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="taps-mobile" class="m-0 pb-5 pt-5">
+					<div class="blur"></div>
+					<div class="row container">
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-1.png"
+										alt="City session IPA"
+									/>
+									<div class="info ml-3">
+										<p class="title">City Session IPA</p>
+										<p class="type">IPA - 4.5%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-3.png"
+										alt="Whirl domination"
+									/>
+									<div class="info ml-3">
+										<p class="title">Whirl domination</p>
+										<p class="type">IPA - 6.2%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-2.png"
+										alt="#DIPA"
+									/>
+									<div class="info ml-3">
+										<p class="title">#DIPA</p>
+										<p class="type">IPA - 8.5%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-4.png"
+										alt="Benene på Nakken
+"
+									/>
+									<div class="info ml-3">
+										<p class="title">Benene på Nakken</p>
+										<p class="type">Cider - 5.9%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-5.png"
+										alt="Gin & Tonic
+"
+									/>
+									<div class="info ml-3">
+										<p class="title">Gin & Tonic</p>
+										<p class="type">w/Lemon Verbena - 6.5%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-6.png"
+										alt="Frequency Sweep 
+"
+									/>
+									<div class="info ml-3">
+										<p class="title">Frequency Sweep</p>
+										<p class="type">Barrel-aged Wild Ale - 5.6%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-7.png"
+										alt="House Of Pale  
+"
+									/>
+									<div class="info ml-3">
+										<p class="title">House Of Pale</p>
+										<p class="type">Pale Ale - 5.5%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+						<div class="beer-card-mobile col-xs-12 col-sm-6 mb-4">
+							<div class="d-x x-between">
+								<div class="d-x">
+									<img
+										class="tap-img"
+										src="./public/tap-mobilie-8.png"
+										alt="45 Days  
+"
+									/>
+									<div class="info ml-3">
+										<p class="title">45 Days</p>
+										<p class="type">Organic Pilsner - 4.7%</p>
+									</div>
+								</div>
+								<div class="mobile-price">35KR</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="find-us" class="m-0">
+					<div class="container graph-wrapper">
+						<div class="row" style="position: relative; z-index: 1">
+							<div
+								class="col-xs-12 col-md-6"
+								style="position: relative; z-index: 2"
+							>
+								<h1 class="mb-4">
+									<span style="font-weight: 100">FIND US IN THE </span>
+									<br />
+									CITY CENTER
+								</h1>
+								<div class="faq-cards row">
+									<div class="col-xs-12 col-md-12 mb-3">
+										<div class="faq-card-all">
+											<div class="faq-card-head">
+												<div class="d-x">
+													<i class="fa fa-bus mr-3"></i>
+													<p>Transport</p>
+												</div>
+												<i class="fa fa-chevron-right"></i>
+											</div>
+											<div class="faq-card-body">
+												<ul>
+													<li>
+														All of the buses 1A, 2A, 3A, 4A, 5A, 6A go to the
+														center and therefore are a viable option
+													</li>
+													<li>
+														The tram is also an option since the central station
+														is not far
+													</li>
+													<li>
+														If you are coming form a different town with a train
+														you will also lend on the main station and it's a 5
+														minute walk to Voxhall :)
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="col-xs-12 col-md-6 mb-5">
+										<div class="faq-card-all">
+											<div class="faq-card-head">
+												<div class="d-x">
+													<i class="fa fa-bus mr-3"></i>
+													<p>Transport</p>
+												</div>
+												<i class="fa fa-chevron-right"></i>
+											</div>
+											<p class="faq-card-body mt-3">
+												You can get to our place by bus or by biking here
+											</p>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6" style="position: relative">
+								<img src="./public/pin.svg" alt="Map pin" class="pin" />
+								<div class="mapouter">
+									<div class="gmap_canvas">
+										<iframe
+											width="100%"
+											height="100%"
+											id="gmap_canvas"
+											src="https://maps.google.com/maps?q=%20Vester%20All%C3%A9%2015,%208000%20Aarhus&t=&z=13&ie=UTF8&iwloc=&output=embed"
+											frameborder="0"
+											scrolling="no"
+											marginheight="0"
+											marginwidth="0"
+										></iframe
+										><a href="https://fmovies-online.net">fmovies</a
+										><br /><style>
+											.mapouter {
+												position: relative;
+												text-align: right;
+												height: 50%;
+												min-height: 400px;
+												width: 100%;
+											}</style
+										><a href="https://www.embedgooglemap.net"
+											>how to add a google map to wordpress</a
+										><style>
+											.gmap_canvas {
+												overflow: hidden;
+												background: none !important;
+												height: 100%;
+												min-height: 400px;
+												width: 100%;
+											}
+										</style>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img
+							src="./public/city-graphic.svg"
+							alt="City graphic"
+							id="graphic"
+							class="col-12"
+						/>
+					</div>
+				</section>
+				<section id="burgers">
+					<div class="blur"></div>
+					<div class="container w-100">
+						<h1 class="mb-4">
+							<span style="font-weight: 100"> WE RECOMMEND </span>
+							<br />
+							THESE PLACES...
+						</h1>
+						<div class="swiper burgers pb-5">
+							<div class="swiper-wrapper">
+								<div
+									class="swiper-slide card"
+									style="
+										background: linear-gradient(
+												180deg,
+												rgba(0, 0, 0, 0) 0%,
+												rgba(0, 0, 0, 0) 40%,
+												rgba(0, 0, 0, 0.871608018207283) 100%
+											),
+											url(./public/burger-slide@2x.jpg);
+									"
+								>
+									<div class="p-3">
+										<div class="line"></div>
+										<h3 class="h5 heading text-uppercase">Byens Burger</h3>
+										<p class="address">Edwin Rehvservej 124</p>
+									</div>
+								</div>
+								<div
+									class="swiper-slide card"
+									style="
+										background: linear-gradient(
+												180deg,
+												rgba(0, 0, 0, 0) 0%,
+												rgba(0, 0, 0, 0) 40%,
+												rgba(0, 0, 0, 0.871608018207283) 100%
+											),
+											url(./public/plate.jpg);
+									"
+								>
+									<div class="p-3">
+										<div class="line"></div>
+										<h3 class="h5 heading text-uppercase">MAMMIS GELATO</h3>
+										<p class="address">Jægergårdsgade 66</p>
+									</div>
+								</div>
+								<div
+									class="swiper-slide card"
+									style="
+										background: linear-gradient(
+												180deg,
+												rgba(0, 0, 0, 0) 0%,
+												rgba(0, 0, 0, 0) 40%,
+												rgba(0, 0, 0, 0.871608018207283) 100%
+											),
+											url(./public/sushi.jpg);
+									"
+								>
+									<div class="p-3">
+										<div class="line"></div>
+										<h3 class="h5 heading text-uppercase">RUNNING PING</h3>
+										<p class="address">Frederiksgade 73</p>
+									</div>
+								</div>
+								<div
+									class="swiper-slide card"
+									style="
+										background: linear-gradient(
+												180deg,
+												rgba(0, 0, 0, 0) 0%,
+												rgba(0, 0, 0, 0) 40%,
+												rgba(0, 0, 0, 0.871608018207283) 100%
+											),
+											url(./public/jensens.jpg);
+									"
+								>
+									<div class="p-3">
+										<div class="line"></div>
+										<h3 class="h5 heading text-uppercase">JENSENS BØFHUS</h3>
+										<p class="address">Rosenkrantzgade 23</p>
+									</div>
+								</div>
+								<div
+									class="swiper-slide card"
+									style="
+										background: linear-gradient(
+												180deg,
+												rgba(0, 0, 0, 0) 0%,
+												rgba(0, 0, 0, 0) 40%,
+												rgba(0, 0, 0, 0.871608018207283) 100%
+											),
+											url(./public/pizza.jpg);
+									"
+								>
+									<div class="p-3">
+										<div class="line"></div>
+										<h3 class="h5 heading text-uppercase">CHELLO'S PIZZERIA</h3>
+										<p class="address">Vesterbrogade 36</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<footer class="container">
+			<div class="row pt-5">
+				<div class="col-xs-12 col-md-4 mb-4 p-1">
+					<h4 class="mb-2">We're all ears</h4>
+					<p class="mb-2">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Reprehenderit odio tempore eos mollitia at nam facere pariatur.
+					</p>
+					<button class="btn btn-primary">Take survey</button>
+				</div>
+				<div class="col-xs-12 col-md-4 mb-4 p-1">
+					<div class="col-xs-12 mb-2">
+						<h4>Contact us:</h4>
+					</div>
+					<div class="col-xs-12 mb-1">
+						<a href="" class="email">voxhall@voxhall.dk</a>
+					</div>
+					<div class="col-xs-12 mb-1">
+						<a href="tel:+">+45 87 30 97 97</a>
+					</div>
+					<div class="col-xs-12 mb-1">
+						<a href="">Vester Alle 15, 8000 Aarhus</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 mb-4 p-0">
+					<h4 class="mb-3">Sign up for our newsletter</h4>
+					<button class="btn btn-ghost">Sign up</button>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./scripts/vendor/anime.min.js"></script>
+		<script src="./scripts/nav.js"></script>
+		<script src="./scripts/transport.js"></script>
+		<script src="./scripts/bar.js"></script>
+		<script src="./scripts/theme.js"></script>
+	</body>
+</html>

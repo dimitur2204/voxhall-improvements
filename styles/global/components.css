@@ -1,0 +1,226 @@
+a {
+	text-decoration: none;
+	color: var(--body-text);
+	font-size: 1.1rem;
+}
+
+a:active,
+a:focus {
+	text-decoration: underline;
+}
+.btn {
+	min-width: 170px;
+	border-radius: 6px;
+	border-width: 2px;
+	border-color: transparent;
+	border-style: solid;
+	padding: var(--spacing-2) var(--spacing-2);
+	cursor: pointer;
+	transition: background-color 200ms ease-out, color 200ms ease-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-blur {
+	backdrop-filter: blur(8px);
+	background-color: rgba(125, 125, 125, 0.5);
+	color: var(--primary-white);
+}
+.btn-blur:hover {
+	background-color: var(--blue-300);
+}
+.btn.small {
+	padding: var(--spacing-1) var(--spacing-1);
+	font-size: 0.9rem;
+	min-width: 120px;
+}
+.btn-primary {
+	background-color: var(--blue-300);
+	color: var(--primary-white);
+}
+.btn-primary:hover {
+	background-color: var(--blue-400);
+}
+.btn-secondary {
+	background-color: var(--yellow-300);
+	color: var(--primary-dark);
+}
+.btn-secondary:hover {
+	background-color: var(--yellow-400);
+}
+/* Needs hover */
+.btn-tertiary {
+	background-color: var(--primary-light);
+	color: var(--primary-dark);
+}
+
+.btn-ghost {
+	background-color: transparent;
+	border-color: var(--primary-white);
+	color: var(--primary-white);
+}
+.btn-ghost:hover {
+	background-color: var(--primary-white);
+	color: var(--primary-dark);
+}
+/* Needs hover */
+.btn-dark {
+	background-color: var(--primary-dark);
+	color: var(--primary-white);
+}
+
+.btn-icon {
+	min-width: initial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	padding: var(--spacing-3);
+	border-radius: 50%;
+}
+
+.btn-icon-ghost {
+	min-width: initial;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	padding: var(--spacing-3);
+	border-radius: 50%;
+	background-color: var(--body-color);
+	color: var(--body-text);
+}
+
+i {
+	font-size: 1.5rem;
+}
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted var(--body-color); /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: var(--body-color);
+	color: var(--body-text);
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+/* Mobile Nav styles */
+.mobile-navbar {
+	background-color: var(--body-color); /* Black background color */
+	color: var(--body-text); /* Black background color */
+	position: fixed; /* Make it stick/fixed */
+	top: 0;
+	/* height: 300px; */
+	width: 100%; /* Full width */
+	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--spacing-2);
+	z-index: 10;
+}
+.mobile-navbar #logo {
+	width: 95px;
+}
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 256px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: 0;
+	display: none;
+}
+
+.slideout-menu-left {
+	left: 0;
+}
+
+.slideout-menu-right {
+	right: 0;
+}
+.slideout-panel {
+	position: relative;
+	z-index: 1;
+	min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+#menu {
+	padding: var(--spacing-2);
+	border-radius: 10px;
+}
+#menu a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	filter: none;
+	font-size: 1.5rem;
+}
+
+#menu li:hover {
+	background-color: var(--body-color);
+}
+
+.desktop-navbar {
+	position: absolute;
+	top: var(--spacing-3);
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.desktop-navbar img {
+	width: 180px;
+}
+.desktop-navbar ul {
+	display: flex;
+}
+.nav-logo {
+	width: 180px;
+	height: 50px;
+}
+@media screen and (min-width: 720px) {
+	.mobile-navbar {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.desktop-navbar {
+		display: none;
+	}
+}
+
+footer h4 {
+	font-family: var(--body-text);
+}

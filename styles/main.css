@@ -1,0 +1,53 @@
+@import url("./global/reset.css");
+@import url("./vendor/bootstrap-grid.min.css");
+@import url("./global/utils.css");
+@import url("./global/typography.css");
+@import url("./global/components.css");
+
+:root {
+	--font-body: "Maven Pro", sans-serif;
+	--font-headings: "adrianna", sans-serif;
+	--primary-white: #fff;
+	--primary-black: #000;
+	--primary-dark: #292b29;
+	--primary-light: #d8d8cc;
+	--yellow-400: #e5db51;
+	--yellow-300: #fff352;
+	--yellow-200: #fff78c;
+	--yellow-100: #fffbc5;
+	--blue-400: #3835bc;
+	--blue-300: #4a46fa;
+	--blue-200: #7774fb;
+	--blue-100: #a5a3fd;
+	--spacing-1: 8px;
+	--spacing-2: 12px;
+	--spacing-3: 20px;
+	--spacing-4: 36px;
+	--spacing-5: 52px;
+	--section-spacing: 40px;
+	--body-color: var(--primary-dark);
+	--body-text: var(--primary-white);
+}
+@media screen and (max-width: 460px) {
+	:root {
+		--spacing-1: 6px;
+		--spacing-2: 8px;
+		--spacing-3: 12px;
+		--spacing-4: 20px;
+		--spacing-5: 36px;
+		--section-spacing: 40px;
+	}
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: var(--body-color);
+	color: var(--body-text);
+	overflow-x: hidden;
+}
+.container {
+	margin: 0 auto;
+}

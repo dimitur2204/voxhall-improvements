@@ -1,0 +1,359 @@
+header {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("../../public/bar.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+}
+main > section {
+	margin: 0;
+}
+#beers {
+	padding: var(--spacing-5) 0;
+	color: var(--primary-dark);
+}
+#beers h2 {
+	margin-bottom: var(--spacing-4);
+}
+#beers img {
+	height: 354px;
+}
+.beers .swiper-pagination-bullet-active {
+	background-color: var(--primary-dark);
+}
+.faq-card-all {
+	cursor: pointer;
+	transition: background-color 200ms ease-out;
+	background-color: var(--blue-300);
+}
+.faq-card-all:hover {
+	background-color: var(--blue-400);
+}
+.faq-card-body {
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+	font-weight: 100;
+	margin-top: var(--spacing-2);
+}
+.faq-card-body li {
+	margin-top: var(--spacing-1);
+}
+.faq-card-body li::before {
+	content: "•";
+}
+.beers .swiper-pagination-bullet {
+	background-color: var(--primary-dark);
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.prices {
+	padding: 0 120px;
+	margin-bottom: -60px;
+	position: relative;
+	top: 65px;
+	z-index: 1;
+}
+.prices > p {
+	/* Prefix required. Even Firefox only supports the -webkit- prefix */
+	/* -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--primary-dark); */
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+#beers {
+	background-color: var(--primary-light);
+}
+.beer-name {
+	font-size: 1.3rem;
+	margin-bottom: var(--spacing-1);
+}
+.type {
+	font-size: 1rem;
+	margin-bottom: var(--spacing-2);
+}
+.line-title.short {
+	width: 180%;
+}
+.line-title.tall {
+	height: 237px;
+}
+.line-title.tall .beer-info {
+	width: 180%;
+}
+.beer-info:last-child {
+	margin-bottom: var(--spacing-2);
+}
+.line-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.line-title.short {
+	justify-content: flex-start;
+}
+.lines-overlay {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0) 100%
+	);
+}
+.line-container {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: -280px;
+
+	right: -35px;
+	position: relative;
+}
+#taps-line img {
+	width: 100%;
+	height: 635px;
+	object-fit: cover;
+}
+#taps-line .line.short {
+	background-color: var(--primary-white);
+	width: 2px;
+}
+
+#taps-line .line.tall {
+	background-color: var(--primary-white);
+	width: 2px;
+}
+@media (max-width: 1200px) {
+	#taps-line {
+		display: none;
+	}
+	#taps-mobile {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	#taps-line {
+		display: block;
+	}
+	#taps-mobile {
+		display: none;
+	}
+}
+#taps-mobile {
+	background: url("../../public/beer-taps.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+#taps-mobile .tap-img {
+	width: 60px;
+	height: 60px;
+}
+#taps-mobile .mobile-price {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+#taps-mobile .title {
+	font-size: 1.4rem;
+	margin-bottom: 4px;
+}
+
+#taps-mobile .type {
+	font-size: 0.9 rem;
+}
+
+.blur {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(13px);
+	z-index: 0;
+}
+#burgers {
+	position: relative;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("../../public/burger.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+#burgers .container {
+	z-index: 1;
+	position: relative;
+}
+
+#burgers .card {
+	position: relative;
+	background-position: center !important;
+	background-size: cover !important;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	text-align: left;
+	max-width: 100%;
+}
+
+#burgers .line {
+	height: 2px;
+	background-color: var(--primary-white);
+	width: 100%;
+	margin-bottom: var(--spacing-1);
+}
+
+#burgers .h5 {
+	font-size: 1.6rem;
+}
+
+#burgers .address {
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+#burgers .swiper-pagination-bullet-active {
+	background-color: var(--body-text);
+}
+
+#burgers .swiper-pagination-bullet {
+	background-color: var(--body-text);
+}
+
+#drinks-menu {
+	position: relative;
+	background: url("../../public/beer-taps.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.drinks-content {
+	z-index: 1;
+	position: relative;
+}
+
+#drinks-menu .swiper-pagination-bullet-active {
+	background-color: var(--body-text);
+}
+
+#drinks-menu .swiper-pagination-bullet {
+	background-color: var(--body-text);
+}
+#drinks-menu h3 {
+	background-color: var(--primary-white);
+	color: var(--primary-dark);
+	font-family: var(--font-body);
+	text-transform: uppercase;
+	padding: var(--spacing-2) var(--spacing-3);
+	text-align: left;
+}
+#drinks-menu .menu-title {
+	font-size: 1.3rem;
+	margin-bottom: var(--spacing-1);
+}
+#drinks-menu .swiper {
+	overflow: visible;
+}
+.menu-type {
+	font-size: 1rem;
+	margin-bottom: var(--spacing-2);
+}
+.menu-price {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+.menu-beer-info {
+	text-align: left;
+}
+/* <div class="menu-card">
+		<h3 class="menu-title">Lager</h3>
+		<div class="d-x x-between">
+			<div class="menu-beer-info">
+				<p class="menu-title">Das Kolich</p>
+				<p class="menu-type">German-style Ale - 4.5%</p>
+			</div>
+			<div class="menu-price">35KR</div>
+		</div>
+	</div> */
+.menu-card {
+	border: 3px solid var(--primary-white);
+	max-width: 690px;
+	width: 70%;
+	min-width: 320px;
+}
+
+#find-us {
+	background: linear-gradient(
+		180deg,
+		rgba(18, 17, 78, 1) 0%,
+		rgba(72, 68, 244, 1) 100%
+	);
+	position: relative;
+	padding: var(--spacing-5) 0;
+	/* height: 650px; */
+}
+
+.faq-card-all {
+	padding: var(--spacing-3);
+	border: 1px solid var(--body-text);
+	border-radius: 6px;
+	-webkit-box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
+	box-shadow: -3px 4px 14px -1px rgba(0, 0, 0, 0.67);
+	max-width: 350px;
+	width: 100%;
+}
+
+.faq-card-body {
+	display: none;
+}
+.faq-card-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#graphic {
+	width: 550px;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	left: -15%;
+	top: 30%;
+}
+.graph-wrapper {
+	position: relative;
+}
+/* absoolute postion #graphic to the bottom left of the container */
+.pin {
+	position: absolute;
+	top: -50px;
+	right: -30px;
+	z-index: 1;
+}
+@media screen and (max-width: 720px) {
+	.pin {
+		top: -27px;
+		right: 0;
+		height: 61px;
+	}
+}

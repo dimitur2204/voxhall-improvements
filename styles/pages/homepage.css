@@ -1,0 +1,163 @@
+header {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.5326724439775911) 0%,
+		rgba(45, 45, 45, 0.16292454481792717) 100%
+	);
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+	header {
+		height: 55vh;
+	}
+}
+#welcome {
+	z-index: 1;
+}
+video {
+	/** Simulationg background-size: cover */
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	filter: brightness(0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.concerts .swiper-pagination-bullet-active {
+	background-color: var(--body-text);
+}
+
+.concerts .swiper-pagination-bullet {
+	background-color: var(--body-text);
+}
+.swiper-wrapper {
+	box-sizing: border-box;
+}
+.swiper-slide {
+	border-radius: 6px;
+	padding: var(--spacing-2);
+	background-position: center !important;
+	background-size: cover !important;
+	text-align: center;
+	height: 280px;
+	display: flex;
+	flex-direction: column;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+	-webkit-align-items: space-between;
+	align-items: space-between;
+}
+.swiper-slide h4 {
+	text-align: left;
+	font-size: 2rem;
+}
+.swiper-slide .time,
+.swiper-slide .date {
+	font-size: 0.7rem;
+	text-align: left;
+}
+.beer-bg {
+	background: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.9267900910364145) 0%,
+			rgba(0, 0, 0, 0.15) 100%
+		),
+		url("../../public/bar.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#craft-beer h2:first-child {
+	text-shadow: -4px 2px 1px #f9c6c2, -5px 2px 1px #f6aaa4, -6px 2px 1px #f28d86,
+		-7px 2px 1px #ef7167, -8px 2px 1px #ec5449;
+}
+#craft-beer h2:nth-child(2) {
+	text-shadow: -4px 2px 1px #c2c1fd, -5px 2px 1px #a4a3fc, -6px 2px 1px #8684fb,
+		-7px 2px 1px #6765fa, -8px 2px 1px #4946f9;
+}
+.lightning-box {
+	position: relative;
+}
+.lightning-1 {
+	position: absolute;
+	top: -65px;
+	left: 45px;
+	width: 40px;
+	height: 40px;
+}
+.lightning-2 {
+	position: absolute;
+	top: -35px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+}
+.pictures-bg {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.4326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("../../public/photos.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	align-items: flex-end;
+}
+.guide-bg {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.4326724439775911) 0%,
+			rgba(45, 45, 45, 0.16292454481792717) 100%
+		),
+		url("../../public/guide.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#pictures .btn {
+	width: 170px !important;
+}
+#craft-beer .btn {
+	width: 170px !important;
+}
+#guide .blur-box {
+	/* Add the blur effect */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	backdrop-filter: blur(8px);
+	padding: var(--spacing-4);
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 6px;
+}
+#guide p {
+	margin: 0 auto;
+	margin-bottom: var(--spacing-4);
+}
+@media screen and (max-width: 720px) {
+	.guide-bg {
+		backdrop-filter: blur(8px);
+	}
+	#guide .blur-box {
+		padding: var(--spacing-3);
+		width: 100%;
+		border-radius: 6px;
+	}
+}
