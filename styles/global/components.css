@@ -319,3 +319,9 @@ input {
 	border-radius: 6px;
 	border: none;
 }
+/* Swiper styles */
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--primary-white);
+	width: calc(var(--swiper-navigation-size) / 4 * 27);
+}

@@ -91,23 +91,46 @@ const drinksCarousel = new Swiper(".drinks-menu", {
 	fadeEffect: {
 		crossFade: true,
 	},
+	navigation: {
+		enabled: false,
+	},
+	breakpoints: {
+		960: {
+			navigation: {
+				enabled: true,
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		},
+	},
 });
 
 const burgerCarousel = new Swiper(".burgers", {
 	spaceBetween: 20,
 	grabCursor: true,
 	loop: true,
+	slidesPerView: 1,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 	},
-	slidesPerView: 1,
+	navigation: {
+		enabled: false,
+	},
 	breakpoints: {
 		460: {
 			slidesPerView: 2,
 		},
 		720: {
 			slidesPerView: 3,
+		},
+		1600: {
+			slidesPerView: 3,
+			navigation: {
+				enabled: true,
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
 		},
 	},
 });
