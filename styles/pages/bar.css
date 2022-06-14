@@ -239,10 +239,12 @@ main > section {
 #burgers .swiper-pagination-bullet {
 	background-color: var(--body-text);
 }
+
 #burgers .swiper-button-next,
 #burgers .swiper-button-prev {
 	display: none;
 }
+
 @media screen and (min-width: 1600px) {
 	#burgers .swiper-button-next,
 	#burgers .swiper-button-prev {
