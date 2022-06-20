@@ -56,11 +56,11 @@ video {
 }
 .swiper-slide h4 {
 	text-align: left;
-	font-size: 2rem;
+	font-size: 3.2rem;
 }
 .swiper-slide .time,
 .swiper-slide .date {
-	font-size: 0.7rem;
+	font-size: 1.1rem;
 	text-align: left;
 }
 .beer-bg {
