@@ -250,6 +250,7 @@ main > section {
 	#burgers .swiper-button-prev {
 		display: flex;
 		top: 54%;
+		width: calc(var(--swiper-navigation-size) / 3 * 27);
 	}
 }
 
@@ -369,4 +370,24 @@ main > section {
 		right: 0;
 		height: 61px;
 	}
+}
+
+.lightning-box {
+	position: relative;
+}
+
+.lightning-box img {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+}
+
+.lightning-1 {
+	top: 0px;
+	left: 0px;
+}
+
+.lightning-2 {
+	top: 0px;
+	left: 0px;
 }
