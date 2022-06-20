@@ -46,7 +46,7 @@ video {
 	background-position: center !important;
 	background-size: cover !important;
 	text-align: center;
-	height: 280px;
+	height: 480px;
 	display: flex;
 	flex-direction: column;
 	-webkit-justify-content: flex-end;

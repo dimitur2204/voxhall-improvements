@@ -21,7 +21,7 @@ const homepageCarousel = new Swiper(".concerts", {
 			slidesPerView: 2,
 		},
 		720: {
-			slidesPerView: 3,
+			slidesPerView: 2,
 		},
 	},
 });
